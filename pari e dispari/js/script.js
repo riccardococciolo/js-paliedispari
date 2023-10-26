@@ -16,14 +16,23 @@ console.log(sum);
 
 function oddEven(testNumber) {
     let result = "";
-    if (result % 2 === 0) {
-        result = "even";
+    if (testNumber % 2 === 0) {
+        result = "pari";
     } else {
-        result = "odd";
+        result = "dispari";
     }
 
     return result;
 }
 
-console.log(oddEven(5));
+console.log(oddEven(sum));
 
+let message = ""
+
+if (oddEven(sum) === userChoise) {
+    message = "hai vinto";
+} else {
+    message = "hai perso";
+}
+
+alert(message);
