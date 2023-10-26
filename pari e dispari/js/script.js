@@ -13,3 +13,17 @@ const pcNumber = generateRandomNumber(1, 5);
 
 const sum = pcNumber + userNumber;
 console.log(sum);
+
+function oddEven(testNumber) {
+    let result = "";
+    if (result % 2 === 0) {
+        result = "even";
+    } else {
+        result = "odd";
+    }
+
+    return result;
+}
+
+console.log(oddEven(5));
+
